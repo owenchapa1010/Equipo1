@@ -5,10 +5,10 @@ public class calculadora {
         Scanner scanner = new Scanner(System.in);
         
         System.out.println("Ingrese el primer número:");
-        double num1 = scanner.nextDouble();
+        double num1 = scanner.nextFloat();
         
         System.out.println("Ingrese el segundo número:");
-        double num2 = scanner.nextDouble();
+        double num2 = scanner.nextFLoat();
         
         System.out.println("Seleccione la operación a realizar:");
         System.out.println("1. Suma");
