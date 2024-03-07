@@ -62,9 +62,6 @@ public class calculadora {
             default:
                 System.out.println("Opción no válida.");
                 return;
-            default:
-                System.out.println("Opción no válida.");
-                return;
         }
         
         // Mostrar el resultado de la operación
