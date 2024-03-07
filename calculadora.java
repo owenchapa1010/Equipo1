@@ -20,6 +20,7 @@ public class calculadora {
         System.out.println("3. Multiplicación");
         System.out.println("4. División");
         System.out.println("5. Raiz");
+        System.out.println("6. Potencia");
 
         // Leer la elección del usuario
         int choice = scanner.nextInt();
@@ -55,6 +56,12 @@ public class calculadora {
                     return;
                 }
                 break;
+            case 6:
+                result= Math.pow(num1,num2);
+            break;
+            default:
+                System.out.println("Opción no válida.");
+                return;
             default:
                 System.out.println("Opción no válida.");
                 return;
