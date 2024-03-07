@@ -1,23 +1,25 @@
 import java.util.Scanner;
-
+//Hola
 public class calculadora {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
         System.out.println("Ingrese el primer número:");
-        float num1 = scanner.nextFloat();
+        double num1 = scanner.nextFloat();
         
         System.out.println("Ingrese el segundo número:");
-        float num2 = scanner.nextFLoat();
+        double num2 = scanner.nextFLoat();
         
         System.out.println("Seleccione la operación a realizar:");
         System.out.println("1. Suma");
         System.out.println("2. Resta");
         System.out.println("3. Multiplicación");
         System.out.println("4. División");
+        System.out.println("5. Raiz");
+
         int choice = scanner.nextInt();
         
-        float result = 0;
+        double result = 0;
         switch(choice) {
             case 1:
                 result = num1 + num2;
@@ -37,6 +39,13 @@ public class calculadora {
                 }
                 break;
             case 5:
+                if(num2 1 != 0){
+                result = Math.pow(num1, 1/num2);
+                }else{
+                    System.out.println("El indice de la raiz no puede ser cero");
+                    return;
+                }
+            break;
             default:
                 System.out.println("Opción no válida.");
                 return;
