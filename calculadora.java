@@ -5,10 +5,10 @@ public class calculadora {
         Scanner scanner = new Scanner(System.in);
         
         System.out.println("Ingrese el primer número:");
-        double num1 = scanner.nextFloat();
+        float num1 = scanner.nextFloat();
         
         System.out.println("Ingrese el segundo número:");
-        double num2 = scanner.nextFLoat();
+        float num2 = scanner.nextFLoat();
         
         System.out.println("Seleccione la operación a realizar:");
         System.out.println("1. Suma");
@@ -17,7 +17,7 @@ public class calculadora {
         System.out.println("4. División");
         int choice = scanner.nextInt();
         
-        double result = 0;
+        float result = 0;
         switch(choice) {
             case 1:
                 result = num1 + num2;
@@ -36,6 +36,7 @@ public class calculadora {
                     return;
                 }
                 break;
+            case 5:
             default:
                 System.out.println("Opción no válida.");
                 return;
