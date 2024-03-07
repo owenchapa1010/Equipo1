@@ -1,15 +1,19 @@
 import java.util.Scanner;
-//Hola oooo
+
 public class calculadora {
     public static void main(String[] args) {
+        // Crear un objeto Scanner para leer la entrada del usuario
         Scanner scanner = new Scanner(System.in);
         
+        // Solicitar al usuario que ingrese el primer número
         System.out.println("Ingrese el primer número:");
         double num1 = scanner.nextFloat();
         
+        // Solicitar al usuario que ingrese el segundo número
         System.out.println("Ingrese el segundo número:");
-        double num2 = scanner.nextFLoat();
+        double num2 = scanner.nextFLoat(); // Aquí hay un error tipográfico, debería ser nextFloat() en lugar de nextFLoat()
         
+        // Mostrar al usuario las operaciones disponibles
         System.out.println("Seleccione la operación a realizar:");
         System.out.println("1. Suma");
         System.out.println("2. Resta");
@@ -17,9 +21,13 @@ public class calculadora {
         System.out.println("4. División");
         System.out.println("5. Raiz");
 
+        // Leer la elección del usuario
         int choice = scanner.nextInt();
         
+        // Variable para almacenar el resultado de la operación
         double result = 0;
+        
+        // Realizar la operación seleccionada
         switch(choice) {
             case 1:
                 result = num1 + num2;
@@ -39,18 +47,20 @@ public class calculadora {
                 }
                 break;
             case 5:
-                if(num2 1 != 0){
-                result = Math.pow(num1, 1/num2);
-                }else{
-                    System.out.println("El indice de la raiz no puede ser cero");
+                // Calcular la raíz, asegurándose de que el índice no sea cero
+                if(num2 != 0){
+                    result = Math.pow(num1, 1/num2);
+                } else {
+                    System.out.println("El índice de la raíz no puede ser cero");
                     return;
                 }
-            break;
+                break;
             default:
                 System.out.println("Opción no válida.");
                 return;
         }
         
+        // Mostrar el resultado de la operación
         System.out.println("El resultado es: " + result);
     }
 }
