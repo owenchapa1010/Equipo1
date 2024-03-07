@@ -11,7 +11,7 @@ public class calculadora {
         
         // Solicitar al usuario que ingrese el segundo número
         System.out.println("Ingrese el segundo número:");
-        double num2 = scanner.nextFLoat(); // Aquí hay un error tipográfico, debería ser nextFloat() en lugar de nextFLoat()
+        double num2 = scanner.nextFloat(); // Aquí hay un error tipográfico, debería ser nextFloat() en lugar de nextFLoat()
         
         // Mostrar al usuario las operaciones disponibles
         System.out.println("Seleccione la operación a realizar:");
